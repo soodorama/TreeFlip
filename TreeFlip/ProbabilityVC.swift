@@ -8,11 +8,26 @@
 
 import UIKit
 
+protocol ProbabilityVCDelegate: class {
+    func backToEffectPressed()
+    func forwardToSavePressed()
+}
+
 class ProbabilityVC: UIViewController {
 
+    var delegate: ProbabilityVCDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    @IBAction func backToEffectPreassed(_ sender: UIBarButtonItem) {
+        delegate?.backToEffectPressed()
+    }
+    
+    @IBAction func forwardToSavePressed(_ sender: UIBarButtonItem) {
+        delegate?.forwardToSavePressed()
+    }
+    
 }

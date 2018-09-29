@@ -8,12 +8,27 @@
 
 import UIKit
 
+protocol EffectVCDelegate: class {
+    func backToCausePressed()
+    func forwardToResultsPressed(sender: UIBarButtonItem)
+}
+
 class EffectVC: UIViewController {
 
+    var delegate: EffectVCDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction func backToCausePressed(_ sender: UIBarButtonItem) {
+        delegate?.backToCausePressed()
+    }
+    
+    
+    @IBAction func forwardToResultsPressed(_ sender: UIBarButtonItem) {
+        delegate?.forwardToResultsPressed(sender: sender)
+    }
+    
 }

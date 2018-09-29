@@ -66,6 +66,11 @@
                         <viewLayoutGuide key="safeArea" id="51Q-gb-sw4"/>
                     </view>
                     <navigationItem key="navigationItem" title="Cause" id="bjI-iJ-15l">
+                        <barButtonItem key="leftBarButtonItem" image="backward" id="Z2j-0Y-qYK">
+                            <connections>
+                                <action selector="backToTableViewPressed:" destination="Rba-gu-Row" id="Nsm-Ye-4M2"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="forward" id="gc8-3E-qPW">
                             <connections>
                                 <action selector="toEffectPressed:" destination="Rba-gu-Row" id="jfg-ys-2lF"/>
@@ -95,8 +100,16 @@
                         <viewLayoutGuide key="safeArea" id="UYc-2M-Fdp"/>
                     </view>
                     <navigationItem key="navigationItem" title="Effect" id="fIY-ne-xef">
-                        <barButtonItem key="leftBarButtonItem" title="Back" image="backward" id="UQR-fQ-1ky"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="forward" id="aev-g7-zIm"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="backward" id="UQR-fQ-1ky">
+                            <connections>
+                                <action selector="toCausePressed:" destination="ggK-a6-NhP" id="pyY-Qt-hYs"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="forward" id="aev-g7-zIm">
+                            <connections>
+                                <action selector="toResultsPressed:" destination="ggK-a6-NhP" id="ncJ-aa-gHI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="N4G-kF-L1u" kind="presentation" identifier="ToResultsSegue" id="YmC-jm-RiK"/>
@@ -117,8 +130,16 @@
                         <viewLayoutGuide key="safeArea" id="e52-GX-Mgs"/>
                     </view>
                     <navigationItem key="navigationItem" title="Flipped" id="kPy-Pe-v3Z">
-                        <barButtonItem key="leftBarButtonItem" title="Back" image="backward" id="6Nc-cB-we1"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="vv1-Fg-udV"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="backward" id="6Nc-cB-we1">
+                            <connections>
+                                <action selector="toEffectPressed:" destination="xLa-ts-y7P" id="TFB-jI-Bz2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="vv1-Fg-udV">
+                            <connections>
+                                <action selector="savePressed:" destination="xLa-ts-y7P" id="pBb-6S-G2h"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWM-XD-wub" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -179,7 +200,7 @@
             </objects>
             <point key="canvasLocation" x="4439.1999999999998" y="-22.03898050974513"/>
         </scene>
-        <!--MainVC-->
+        <!--TreeFlip-->
         <scene sceneID="1FL-qu-Lej">
             <objects>
                 <viewController id="h79-T7-z9d" customClass="MainVC" customModule="TreeFlip" customModuleProvider="target" sceneMemberID="viewController">
@@ -227,11 +248,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fc3-D3-zDm"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7y8-ju-3Pr">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="o0Z-i8-eFu"/>
+                    <navigationItem key="navigationItem" title="TreeFlip" id="7y8-ju-3Pr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="o0Z-i8-eFu">
+                            <connections>
+                                <action selector="addTreeFlipPressed:" destination="h79-T7-z9d" id="GpX-HQ-dqo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="6uj-hi-Fa7" kind="presentation" identifier="ToCauseVC" id="3nB-dk-iSd"/>
+                        <outlet property="tableView" destination="4cH-UX-NA8" id="rPc-M5-cBP"/>
+                        <segue destination="6uj-hi-Fa7" kind="presentation" identifier="ToCauseSegue" id="3nB-dk-iSd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3OS-gH-kKl" userLabel="First Responder" sceneMemberID="firstResponder"/>

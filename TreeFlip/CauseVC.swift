@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol CauseVCDelegate: class {
+    func backToTableViewPressed()
+    func forwardToEffectPressed(sender: UIBarButtonItem)
+}
+
 class CauseVC: UIViewController {
     
     @IBOutlet weak var percentTextField: UITextField!
@@ -15,14 +20,22 @@ class CauseVC: UIViewController {
     @IBOutlet var oppPercentLabel: UIView!
     @IBOutlet weak var oppCauseLabel: UITextField!
     
+    var delegate: CauseVCDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 
-    @IBAction func toEffectPressed(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "ToEffectSegue", sender: sender)
+    @IBAction func forwardToEffectPressed(_ sender: UIBarButtonItem) {
+        delegate?.forwardToEffectPressed(sender: sender)
+    }
+    
+    @IBAction func backToTableViewPressed(_ sender: UIBarButtonItem) {
+        delegate?.backToTableViewPressed()
     }
     
 }
+
+
 
