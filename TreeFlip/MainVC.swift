@@ -24,8 +24,8 @@ class MainVC: UIViewController {
 }
 
 extension MainVC: CauseVCDelegate {
-    func backToTableViewPressed() {
-        dismiss(animated: true, completion: nil)
+    func backToTableViewPressed(sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "unwindToTableView", sender: self)
     }
     
     func forwardToEffectPressed(sender: UIBarButtonItem) {
@@ -49,7 +49,6 @@ extension MainVC: ProbabilityVCDelegate {
     }
     
     func forwardToSavePressed() {
-        dismiss(animated: true, completion: nil)
         dismiss(animated: true, completion: nil)
     }
     

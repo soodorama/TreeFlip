@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CauseVCDelegate: class {
-    func backToTableViewPressed()
+    func backToTableViewPressed(sender: UIBarButtonItem)
     func forwardToEffectPressed(sender: UIBarButtonItem)
 }
 
@@ -24,7 +24,7 @@ class CauseVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        percentTextField.keyboardType = UIKeyboardType.decimalPad
     }
 
     @IBAction func forwardToEffectPressed(_ sender: UIBarButtonItem) {
@@ -32,7 +32,7 @@ class CauseVC: UIViewController {
     }
     
     @IBAction func backToTableViewPressed(_ sender: UIBarButtonItem) {
-        delegate?.backToTableViewPressed()
+        delegate?.backToTableViewPressed(sender: sender)
     }
     
 }
