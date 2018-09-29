@@ -1,5 +1,5 @@
 //
-//  MainVC.swift
+//  ProbabilityVC.swift
 //  TreeFlip
 //
 //  Created by Neil Sood on 9/28/18.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class ProbabilityVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    
 
 }

@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8E5F4B00215F2DD300FB828B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F4AFF215F2DD300FB828B /* AppDelegate.swift */; };
-		8E5F4B02215F2DD300FB828B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F4B01215F2DD300FB828B /* MainVC.swift */; };
+		8E5F4B02215F2DD300FB828B /* CauseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F4B01215F2DD300FB828B /* CauseVC.swift */; };
 		8E5F4B05215F2DD300FB828B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5F4B03215F2DD300FB828B /* Main.storyboard */; };
 		8E5F4B08215F2DD300FB828B /* TreeFlip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F4B06215F2DD300FB828B /* TreeFlip.xcdatamodeld */; };
 		8E5F4B0A215F2DD400FB828B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5F4B09215F2DD400FB828B /* Assets.xcassets */; };
 		8E5F4B0D215F2DD400FB828B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5F4B0B215F2DD400FB828B /* LaunchScreen.storyboard */; };
 		8E5F4B18215F2DD400FB828B /* TreeFlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F4B17215F2DD400FB828B /* TreeFlipTests.swift */; };
 		8E5F4B23215F2DD400FB828B /* TreeFlipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F4B22215F2DD400FB828B /* TreeFlipUITests.swift */; };
+		8E5F4B31215F3E3900FB828B /* EffectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F4B30215F3E3900FB828B /* EffectVC.swift */; };
+		8E5F4B33215F3F2700FB828B /* ProbabilityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F4B32215F3F2700FB828B /* ProbabilityVC.swift */; };
+		8E5F4B35215F435900FB828B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F4B34215F435900FB828B /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 /* Begin PBXFileReference section */
 		8E5F4AFC215F2DD300FB828B /* TreeFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5F4AFF215F2DD300FB828B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E5F4B01215F2DD300FB828B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		8E5F4B01215F2DD300FB828B /* CauseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauseVC.swift; sourceTree = "<group>"; };
 		8E5F4B04215F2DD300FB828B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E5F4B07215F2DD300FB828B /* TreeFlip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TreeFlip.xcdatamodel; sourceTree = "<group>"; };
 		8E5F4B09215F2DD400FB828B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		8E5F4B1E215F2DD400FB828B /* TreeFlipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeFlipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5F4B22215F2DD400FB828B /* TreeFlipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeFlipUITests.swift; sourceTree = "<group>"; };
 		8E5F4B24215F2DD400FB828B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E5F4B30215F3E3900FB828B /* EffectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectVC.swift; sourceTree = "<group>"; };
+		8E5F4B32215F3F2700FB828B /* ProbabilityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbabilityVC.swift; sourceTree = "<group>"; };
+		8E5F4B34215F435900FB828B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				8E5F4AFF215F2DD300FB828B /* AppDelegate.swift */,
-				8E5F4B01215F2DD300FB828B /* MainVC.swift */,
+				8E5F4B01215F2DD300FB828B /* CauseVC.swift */,
+				8E5F4B30215F3E3900FB828B /* EffectVC.swift */,
 				8E5F4B03215F2DD300FB828B /* Main.storyboard */,
+				8E5F4B34215F435900FB828B /* MainVC.swift */,
+				8E5F4B32215F3F2700FB828B /* ProbabilityVC.swift */,
 				8E5F4B09215F2DD400FB828B /* Assets.xcassets */,
 				8E5F4B0B215F2DD400FB828B /* LaunchScreen.storyboard */,
 				8E5F4B0E215F2DD400FB828B /* Info.plist */,
@@ -259,9 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E5F4B02215F2DD300FB828B /* MainVC.swift in Sources */,
+				8E5F4B02215F2DD300FB828B /* CauseVC.swift in Sources */,
+				8E5F4B35215F435900FB828B /* MainVC.swift in Sources */,
 				8E5F4B00215F2DD300FB828B /* AppDelegate.swift in Sources */,
 				8E5F4B08215F2DD300FB828B /* TreeFlip.xcdatamodeld in Sources */,
+				8E5F4B31215F3E3900FB828B /* EffectVC.swift in Sources */,
+				8E5F4B33215F3F2700FB828B /* ProbabilityVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

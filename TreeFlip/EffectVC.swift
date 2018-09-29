@@ -1,5 +1,5 @@
 //
-//  MainVC.swift
+//  EffectVC.swift
 //  TreeFlip
 //
 //  Created by Neil Sood on 9/28/18.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class EffectVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
     }
-    
 
 }
