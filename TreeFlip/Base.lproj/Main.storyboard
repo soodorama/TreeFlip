@@ -95,7 +95,7 @@
                     <connections>
                         <outlet property="causeLabel" destination="V4V-z6-L5Y" id="4xI-uy-Pyz"/>
                         <outlet property="oppCauseLabel" destination="cd0-HA-dE5" id="ZSa-Mh-5NP"/>
-                        <outlet property="oppPercentLabel" destination="1gK-Ey-T00" id="elY-g7-agd"/>
+                        <outlet property="oppPercentLabel" destination="FQG-38-eLM" id="L02-tl-Fep"/>
                         <outlet property="percentTextField" destination="7l7-Ge-Qbe" id="9KV-MI-23D"/>
                         <segue destination="cRk-DP-3FJ" kind="presentation" identifier="ToEffectSegue" id="B6O-03-HIe"/>
                         <segue destination="0lU-W3-6K7" kind="unwind" identifier="unwindToTableView" unwindAction="unwindToTableViewWithSegue:" id="r9p-FX-S2z"/>
