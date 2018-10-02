@@ -32,7 +32,7 @@ class CauseVC: UIViewController {
     @objc func textFieldDidChange(_ textField: UITextField) {
         print(textField)
         
-        oppPercentLabel.text = 1.0 - Double(percentTextField.text)
+//        oppPercentLabel.text = 1.0 - Double(percentTextField.text)
     }
 
     @IBAction func forwardToEffectPressed(_ sender: UIBarButtonItem) {
